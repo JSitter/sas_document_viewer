@@ -1,0 +1,7 @@
+sas_document_viewer.content:
+  path: '/welcome/page'
+  defaults:
+    _controller: '\Drupal\sas_document_viewer\Controller\SASDocumentViewerController::welcome'
+    _title: "SAS Doc Viewer Title"
+  requirements:
+    _permission: 'access content'

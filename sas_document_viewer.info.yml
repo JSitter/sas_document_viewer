@@ -1,0 +1,6 @@
+name: SAS Document Viewer
+type: module
+description: "Module that allows users to browse and view the documents available on the Seminary's digital archive."
+package: Custom
+version: '0.1 Alpha'
+core: '8.x'

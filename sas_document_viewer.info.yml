@@ -4,3 +4,6 @@ description: "Module that allows users to browse and view the documents availabl
 package: Custom
 version: '0.1 Alpha'
 core: '8.x'
+
+libraries:
+  - sas_document_viewer/global-scripts

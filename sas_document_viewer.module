@@ -7,3 +7,7 @@ function sas_document_viewer_form_alter(&$form, \Drupal\Core\Form\FormStateInter
         $form['actions']['submit']['#value'] = t('Comment');
     }
 }
+
+function sas_document_viewer_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'sas_document_viewer/global-scripts';
+}

@@ -9,5 +9,5 @@ function sas_document_viewer_form_alter(&$form, \Drupal\Core\Form\FormStateInter
 }
 
 function sas_document_viewer_page_attachments(array &$attachments) {
-    $attachments['#attached']['library'][] = 'sas_document_viewer/global-scripts';
+    $attachments['#attached']['library'][] = 'sas_document_viewer/example';
 }

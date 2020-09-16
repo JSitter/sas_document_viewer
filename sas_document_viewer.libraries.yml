@@ -1,3 +1,4 @@
 global-scripts:
+  version: 1
   js:
     js/example.js: {}

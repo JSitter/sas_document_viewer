@@ -3,14 +3,14 @@ namespace Drupal\sas_document_viewer\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 /**
- * Provides a Sample block
+ * Provides a block to browse and view SAS Archive documents.
  * @Block(
- * id = "Sample_Drupal_Block",
- * admin_label = @Translation("Drupal Sample Block"),
- * category = @Translation("The example drupal block"),
+ * id = "sas_document_viewer_block",
+ * admin_label = @Translation("SAS Document Viewer Block"),
+ * category = @Translation("Browse and view SAS documents."),
  * )
  */
-class SampleBlock extends BlockBase {
+class DocViewerBlock extends BlockBase {
     /**
      * {@inheritdoc}
      */

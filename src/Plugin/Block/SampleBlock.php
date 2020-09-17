@@ -16,22 +16,14 @@ class SampleBlock extends BlockBase {
      */
     public function build() {
         return[
-            '#markup' => $this->getRandQuote(),
+            '#markup' => $this->getHtmlString(),
             '#attached' => array(
-                'library' => array('sas_document_viewer/global-scripts'),
+                'library' => array('sas_document_viewer/react-scripts'),
             ),
         ];
     }
 
-    /**
-     * Private function for getting random quotes
-     */
-    private function getRandQuote() {
-        $quotes = [
-            "<i>one</i>",
-            "<i>two</i>",
-            "<i>three</i>"
-        ];
-        return $quotes[array_rand($quotes)];
+    private function getHtmlString() {
+        return '<div id="sas-document-viewer"></div>';
     }
 }

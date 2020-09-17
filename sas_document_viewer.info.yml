@@ -6,4 +6,4 @@ version: '0.1 Alpha'
 core: '8.x'
 
 libraries:
-  - sas_document_viewer/global-scripts
+  - sas_document_viewer/react-scripts

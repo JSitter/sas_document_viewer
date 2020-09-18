@@ -11,5 +11,5 @@ sas_document_viewer.admin_settings:
   defaults:
     _form: '\Drupal\sas_document_viewer\Form\SASDocumentViewerSettingsForm'
     _title: 'SAS Document Viewer Settings'
-    requirements:
-      _permission: 'access content'
+  requirements:
+    _permission: 'administer sas_document_viewer'

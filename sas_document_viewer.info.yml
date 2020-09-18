@@ -7,3 +7,5 @@ core: '8.x'
 
 libraries:
   - sas_document_viewer/react-scripts
+
+configure: sas_document_viewer.admin_settings

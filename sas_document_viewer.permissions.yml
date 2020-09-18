@@ -1,4 +1,4 @@
-administer sas_document_viewer:
+administer site configuration:
   title: 'Administer Settings'
   description: 'Administer SAS Document Viewer Settings'
   restrict access: true

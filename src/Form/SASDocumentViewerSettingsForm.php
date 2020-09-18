@@ -54,6 +54,6 @@ class SASDocumentViewerSettingsForm extends ConfigFormBase {
         $this->config('sas_document_viewer.settings')
             ->set('allowed_types', $allowed_types)
             ->save();
-        parent::submitForm($form, $form_state);
+            parent::submitForm($form, $form_state);
     }
 }

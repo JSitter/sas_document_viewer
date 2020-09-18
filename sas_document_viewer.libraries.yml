@@ -1,3 +1,5 @@
 react-scripts:
   js:
     js/react/sas_document_viewer/dist/app.bundle.js: {minified: true}
+  dependencies:
+    - core/drupalSettings

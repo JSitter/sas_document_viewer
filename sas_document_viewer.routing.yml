@@ -5,3 +5,11 @@ sas_document_viewer.content:
     _title: "SAS Doc Viewer Title"
   requirements:
     _permission: 'access content'
+  
+sas_document_viewer.admin_settings:
+  path: '/admin/config/content/sas_document_viewer'
+  defaults:
+    _form: '\Drupal\sas_document_viewer\Form\SASDocumentViewerSettingsForm'
+    _title: 'SAS Document Viewer Settings'
+    requirements:
+      _permission: 'administer sas_document_viewer'

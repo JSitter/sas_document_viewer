@@ -3,3 +3,8 @@ react-scripts:
     js/react/sas_document_viewer/dist/app.bundle.js: {minified: true}
   dependencies:
     - core/drupalSettings
+
+form-styles:
+  css:
+    theme:
+      css/form-styles.css: {}

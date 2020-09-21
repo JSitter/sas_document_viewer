@@ -54,20 +54,27 @@ class SASDocumentViewerSettingsForm extends ConfigFormBase {
         
         foreach ($contentTypes as $key => $value) {
             $options = $this->getFieldNames($key);
-
-            $form['enable'.$key] = [
+            $form[$key] = [
+                '#type' => 'container',
+                '#attributes' => [
+                    'class' => [
+                        'form-container-group'
+                    ],
+                ],
+            ];
+            $form[$key]['enable-'.$key] = [
                 '#type' => 'checkbox',
                 '#title' => $this->t('Enable browser for '.$key),
                 ];
 
-            $form[$key.'fields'] = [
+            $form[$key][$key.'-fields'] = [
                 '#type' => 'select',
                 '#title' => 'Select field to group '.$key.' by',
                 '#options' =>  $options,
                 '#description' => "Select Field",
             ];
 
-            $form[$key.'levels'] = [
+            $form[$key][$key.'-levels'] = [
                 '#type' => 'select',
                 '#title' => 'Grouping Levels',
                 '#options' =>  array(
@@ -100,6 +107,11 @@ class SASDocumentViewerSettingsForm extends ConfigFormBase {
             ->getStorage('node_type')
             ->loadMultiple();
 
+        // foreach($result as $key->$val) {
+        //     print("<pre>");
+        //     print_r($val);
+        //     print('</pre>');
+        // }
         return $result;
     }
     
@@ -109,6 +121,8 @@ class SASDocumentViewerSettingsForm extends ConfigFormBase {
     protected function getFieldNames($node_name) {
         $result = \Drupal::entityManager()
             ->getFieldDefinitions('node', $node_name);
+        // print_r($result['field_name']);
+
         $nodeArray = array();
         foreach (array_keys($result) as $val) {
             $nodeArray[$val] = t($val);

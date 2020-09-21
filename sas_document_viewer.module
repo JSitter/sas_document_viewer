@@ -9,7 +9,6 @@ function sas_document_viewer_preprocess_node(&$variables) {
 /**
  * Attach css to admin settings page
  */
-
 function sas_document_viewer_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
     if ($form_id == "sas_document_viewer_admin_settings"){
         $form['#attached']['library'][] = 'sas_document_viewer/form-styles';

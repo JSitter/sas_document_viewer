@@ -1,19 +1,4 @@
 <?php
-/**
- * Remember php??
- * array_keys($contentTypes)
- * count($contentTypes)
- * sizeof($contentTypes)
- * 
- * foreach ($contentTypes as $value) {
- *  $value
- * }
- * 
- * foreach ($contentTypes as $key => $value) {
- * $key 
- * $value
- * }
- */
 
 /**
  * @file
@@ -108,11 +93,6 @@ class SASDocumentViewerSettingsForm extends ConfigFormBase {
             ->getStorage('node_type')
             ->loadMultiple();
 
-        // foreach($result as $key->$val) {
-        //     print("<pre>");
-        //     print_r($val);
-        //     print('</pre>');
-        // }
         return $result;
     }
     

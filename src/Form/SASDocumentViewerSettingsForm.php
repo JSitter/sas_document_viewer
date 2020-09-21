@@ -61,10 +61,11 @@ class SASDocumentViewerSettingsForm extends ConfigFormBase {
                         'form-container-group'
                     ],
                 ],
+                '#markup' => '<h2>'.ucfirst($key).' </h2>',
             ];
             $form[$key]['enable-'.$key] = [
                 '#type' => 'checkbox',
-                '#title' => $this->t('Enable browser for '.$key),
+                '#title' => $this->t('Enable browser for '.$key.' nodes.'),
                 ];
 
             $form[$key][$key.'-fields'] = [
